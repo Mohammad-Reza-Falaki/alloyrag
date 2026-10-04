@@ -1,0 +1,266 @@
+[
+  {
+    "query_id": "Q001",
+    "alloy_system": "Al",
+    "query": "What are the typical ultimate tensile strength and yield strength values of 7075-T6 aluminum alloy?",
+    "ground_truth_answer": "7075-T6 aluminum alloy typically has an ultimate tensile strength of about 570 MPa and a 0.2% yield strength of about 500 MPa, with elongation around 10–11%. Its high strength results from precipitation hardening, primarily by fine metastable η′ precipitates formed during artificial aging; the equilibrium η phase is MgZn₂. A typical T6 aging treatment is around 120°C for 24 h, although exact conditions depend on product form and specification.",
+    "corpus_grounded_answer": "For 7075 aluminum in the T6 condition, the reported yield strength is approximately 507–574 MPa and the ultimate tensile strength is approximately 554–638 MPa. In the hot-forged 7075 alloy specimens, peak-aged conditions at 120 °C produced these strength levels, with the highest reported values reaching 574 MPa yield strength and 638 MPa ultimate tensile strength.",
+    "relevant_paper_ids": [
+      "CR_10_3390_ma13051177",
+      "CR_10_1088_2053-1591_ace29a",
+      "CR_10_53671_pturj_v8i4_96"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q002",
+    "alloy_system": "Al",
+    "query": "What is the effect of T6 vs T73 temper on the mechanical properties and corrosion resistance of 7075 aluminum alloy?",
+    "ground_truth_answer": "The T6 temper provides the highest strength of the two, with typical values around 570 MPa UTS and 500 MPa yield strength, but 7075-T6 is relatively susceptible to stress-corrosion cracking because of its precipitation structure, including relatively continuous grain-boundary precipitates and narrow precipitate-free zones. T73 is an over-aged temper: coarsening of the precipitates and a more discontinuous grain-boundary precipitate distribution substantially improve SCC and exfoliation/intergranular-corrosion resistance, but reduce strength to roughly 500 MPa UTS and 435 MPa yield strength. Thus, T73 or related over-aged tempers such as T7351 are selected when corrosion/SCC resistance is more critical than maximum strength.",
+    "corpus_grounded_answer": "For 7075 aluminum alloy, the T6 condition provides high tensile strength and hardness but makes the alloy susceptible to localized corrosion, including exfoliation, intergranular corrosion, and stress-corrosion cracking. The provided study states that T73 treatment is commonly applied to improve corrosion resistance, with a reported reduction in tensile strength of about 10–15% compared with T6. In terms of precipitation, the T6 condition is associated mainly with GP zones and η′ precipitates, whereas the T7x condition is characterized mainly by the η phase.",
+    "relevant_paper_ids": [
+      "CR_10_33261_jaaru_2021_28_2_007",
+      "CR_10_3390_ma13051177",
+      "CR_10_5604_01_3001_0009_7099"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q003",
+    "alloy_system": "Al",
+    "query": "I need an aluminum alloy with UTS above 400 MPa and good corrosion resistance for marine structural applications. What do you recommend?",
+    "ground_truth_answer": "For marine structural applications, conventional 5083-H116 and 5383-H116 do not reliably meet a strict UTS requirement above 400 MPa: 5083-H116 is typically about 303–386 MPa, while 5383-H116 is specified up to about 400 MPa. A stronger marine-grade option is 5059-H116, which has specified tensile-strength values of roughly 360–441 MPa depending on thickness and is used for marine hull structures. Thus, 5059-H116 is a more appropriate answer when UTS above 400 MPa is required, although the exact achievable strength depends on thickness/product specification and its corrosion performance must be maintained through appropriate fabrication and thermal control. If UTS >400 MPa is an absolute requirement beyond what 5059-H116 can provide for the required thickness, a conventional marine-grade aluminum alloy may not satisfy all requirements simultaneously, and the design/material system would need further qualification rather than simply switching to 6082-T6 or coating a 7xxx alloy.",
+    "corpus_grounded_answer": "The supplied paper does not provide enough mechanical-property data to identify an aluminum alloy with UTS above 400 MPa for marine structural applications. It does show that high-strength aluminum alloys can have increased susceptibility to localized corrosion. In particular, AA7075-T6 exhibits surface-layer attack and subsequent pitting in chloride solution, illustrating the trade-off between high strength and corrosion resistance. Therefore, based on this paper alone, a specific alloy meeting both the >400 MPa UTS and marine-corrosion requirements cannot be selected.",
+    "relevant_paper_ids": ["CR_10_5006_1887"],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q004",
+    "alloy_system": "Al",
+    "query": "How does equal channel angular pressing (ECAP) affect the microstructure and mechanical properties of aluminum alloys?",
+    "ground_truth_answer": "Equal-channel angular pressing (ECAP) is a severe plastic deformation process that imposes large plastic shear strains while causing little or no change in the billet cross-section, allowing multiple passes. In aluminum alloys, ECAP generally produces substantial grain refinement, converts elongated/deformed structures into finer subgrains and often ultrafine grains, and increases dislocation density. Consequently, yield strength and hardness usually increase through grain-boundary (Hall–Petch) and dislocation strengthening; in precipitation-hardenable alloys such as 6061 and 7075, ECAP can also modify and often accelerate subsequent precipitation/aging, providing additional strengthening. Tensile ductility commonly decreases, although the magnitude is alloy- and processing-dependent and simultaneous strength–ductility improvements are possible under optimized conditions. Route Bc, involving a 90° rotation between successive passes, is widely used because it often promotes a relatively homogeneous, equiaxed microstructure, but no single ECAP route is universally optimal.",
+    "corpus_grounded_answer": "Equal channel angular pressing (ECAP) refines and homogenizes the microstructure of aluminum alloys by imposing severe plastic strain without changing the cross-sectional dimensions. In the studied Al-7.5% Si alloy, ECAP reduced the size of the primary α-Al grains and fragmented the coarse, brittle eutectic Si particles. After four ECAP passes through route A following T6 treatment, the α-Al grain size decreased from about 176 μm to 50.4 μm, while the Si particle size decreased to approximately 1.45 μm. Route Bc promoted a more globular morphology, whereas route A produced elongated or fibrous α-Al grains. These microstructural changes increased hardness through grain refinement, increased dislocation density, and fragmentation and more uniform distribution of Si particles. In the T6-treated alloy, hardness increased from 68 HV to 129 HV after four ECAP passes through route A. The study also found improved corrosion resistance, with the corrosion rate decreasing from 0.0472 to 0.00162 mm·y⁻¹ after ECAP, attributed mainly to grain refinement and fragmentation of Si particles, which reduced the cathode-to-anode ratio and the associated microgalvanic effect.",
+    "relevant_paper_ids": [
+      "CR_10_4028_p-pflw0s",
+      "CR_10_5604_01_3001_0009_7099"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q005",
+    "alloy_system": "Al",
+    "query": "What aluminum alloy and processing route would you recommend for a lightweight automotive suspension component requiring UTS > 450 MPa, fatigue limit > 150 MPa at 10^7 cycles, and resistance to road salt corrosion?",
+    "ground_truth_answer": "For a lightweight automotive suspension component requiring UTS >450 MPa, high-cycle fatigue strength above 150 MPa at 〖10〗^7cycles, and good resistance to chloride/road-salt exposure, 7050 is a strong candidate, particularly in an over-aged condition such as T7452 for die forgings. Conventional 6061-T6 and 6082-T6 generally do not meet the UTS requirement. 7050-T7451 has typical plate properties around 510 MPa UTS and 441 MPa yield strength, while published tests of 7050-T7451 have reported fatigue strengths above 150 MPa at 〖10〗^7cycles under specified loading conditions. For a forged component, the appropriate temper is T7452 rather than T7451: the forging is solution heat treated, compression stress relieved, and overaged. This provides a useful combination of strength, fatigue performance, toughness, and improved resistance to stress-corrosion and exfoliation corrosion compared with high-strength T6 tempers. Shot peening may further improve fatigue performance by introducing compressive residual stresses, but its benefit is process-dependent and should not be assigned a universal percentage. Because road salt produces chloride exposure and 7050 remains susceptible to localized corrosion, the finished component should use an appropriately qualified corrosion-protection system and galvanic isolation where necessary. Final qualification must evaluate fatigue of the actual component geometry and loading spectrum, rather than relying solely on smooth-specimen material data.",
+    "corpus_grounded_answer": "",
+    "relevant_paper_ids": [],
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "Q006",
+    "alloy_system": "Ti",
+    "query": "What are the mechanical properties of Ti-6Al-4V alloy under different processing or heat-treatment conditions?",
+    "ground_truth_answer": "Ti-6Al-4V exhibits different mechanical properties depending on its processing and heat-treatment condition. In annealed wrought material, typical room-temperature properties are about **790–900 MPa yield strength, 870–970 MPa UTS, and 16–18% elongation**. Solution treatment and aging generally increase strength, with representative values around **1100 MPa yield strength and 1150 MPa UTS**, but usually reduce ductility. Additive manufacturing can produce higher strength because of its fine microstructure, while subsequent stress relief, annealing, or HIP generally improves ductility at the expense of some strength. Thus, mechanical properties vary substantially with processing route and heat-treatment condition.",
+    "corpus_grounded_answer": "Ti-6Al-4V shows different mechanical properties in different condition. In the as-received condition, the yield strength, tensile strength, and elongation were 935.7 MPa, 977.5 MPa, and 6.9%, respectively, with a hardness of about 293–297 HV. After high-temperature ring-rolling at 1050 °C for 3 h followed by air cooling, these values were 848 MPa, 949 MPa, and 8.0%, while hardness increased to about 325–337 HV. For as-built SLM Ti-6Al-4V, the studied strategies produced 565–726 MPa yield strength, 724–912 MPa tensile strength, 0.8–2.2% elongation, and 67–80 GPa Young’s modulus. For deep cryogenic treatment at −196 °C, the review reports generally increased hardness and tensile strength, 8–12% higher elongation, and, in some studies, 15–20% hardness gains. Annealing followed by DCT reportedly improved elongation by 19.7% while maintaining tensile strength.",
+    "relevant_paper_ids": [
+      "CR_10_3390_ma17184604",
+      "CR_10_52783_dxjb_v38_285",
+      "CR_10_4028_p-6zarey"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q007",
+    "alloy_system": "Ti",
+    "query": "What is the difference between alpha, near-alpha, alpha+beta, and beta titanium alloys in terms of properties and applications?",
+    "ground_truth_answer": "Titanium alloys are commonly classified according to their phase constitution and the amount of α- and β-stabilizing elements. α alloys are predominantly HCP α phase, generally offer excellent weldability, corrosion resistance, and good elevated-temperature stability, but have lower strengthening potential than α+β and β alloys. They are used in chemical processing, cryogenic service, and other applications where corrosion resistance, weldability, or low-temperature performance is important. Near-α alloys contain mostly α with a small amount of β and are designed primarily for elevated-temperature strength, creep resistance, and microstructural stability; examples such as Ti-6Al-2Sn-4Zr-2Mo are used in aerospace engine components such as compressor disks and blades. α+β alloys contain substantial amounts of both phases and provide a broad balance of strength, toughness, corrosion resistance, and fabricability. Ti-6Al-4V is the most widely used example and can be strengthened by solution treatment and aging. β alloys are more accurately described commercially as metastable-β or near-β alloys: β is BCC and can be retained at room temperature, but α and other phases may form depending on processing and heat treatment. These alloys have high strength potential and excellent cold formability in appropriate solution-treated conditions, followed by substantial strengthening during aging. Ti-10V-2Fe-3Al is used for high-strength forged airframe components such as landing gear, while Ti-15V-3Cr is used in high-strength sheet and strip applications.",
+    "corpus_grounded_answer": "Alpha (α): α-dominant alloys with low β content. The supplied paper reports their use in corrosion-resistant structural components, including nuclear power and marine applications. The Ti–2.5Al–2.6Zr alloy showed high strength after rotary swaging, but with reduced elongation. Near-alpha: α-dominant alloys containing additional β phase, which improves processing flexibility and plasticity. In TA15, heat treatment produced different α/β microstructures and corresponding changes in tensile deformation behavior. Applications mentioned include aviation and naval architecture. Alpha+beta (α+β): Two-phase alloys containing both α and β phases. The supplied papers associate two-phase titanium alloys with aviation and marine engineering, but do not provide enough data for a detailed general property comparison.Beta (β): β-phase alloys with a bcc structure. Ti–15V–3Al–3Sn–3Cr showed high cold workability and high hardenability through α precipitation during aging. Aging increased hardness and Young’s modulus while reducing ductility.",
+    "relevant_paper_ids": [
+      "CR_10_1088_1742-6596_3102_1_012008",
+      "AX_1806_06367",
+      "CR_10_52783_dxjb_v38_285",
+      "AX_2403_13587",
+      "CR_10_4028_www_scientific_net_msf_849_287",
+      "CR_10_4028_www_scientific_net_ssp_266_201",
+      "CR_10_4028_www_scientific_net_msf_830-831_151",
+      "CR_10_4028_www_scientific_net_msf_929_42"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q008",
+    "alloy_system": "Ti",
+    "query": "Which processing route for Ti-6Al-4V maximizes high-cycle fatigue life for rotating aerospace components?",
+    "ground_truth_answer": "For Ti-6Al-4V rotating aerospace components where high-cycle fatigue resistance is a primary requirement, a forged bimodal (duplex) microstructure is generally a strong choice. A typical route is α+β (sub-transus) hot forging below the β-transus, followed by an appropriate heat treatment to produce fine equiaxed primary α in a transformed β matrix containing fine secondary α/β. The β-transus of Ti-6Al-4V is approximately 995°C, although the exact value depends on composition. The optimum forging temperature and primary-α fraction are alloy- and process-dependent and should not be specified as universal values. Bimodal microstructures generally provide higher HCF strength than fully equiaxed structures and often higher HCF strength than fully lamellar structures, although lamellar structures can provide superior fracture toughness and resistance to fatigue-crack propagation. Fine primary-α grains and controlled α/β morphology are beneficial, but no single grain-size or primary-α fraction is universally optimal. Shot peening can further improve fatigue strength by introducing near-surface compressive residual stresses, but its benefit is process-dependent. HIP is particularly valuable for additive- or powder-processed Ti-6Al-4V when internal porosity or lack-of-fusion defects are present; it is not universally required for high-quality wrought forgings. Fatigue strength should be reported at a specified number of cycles and under specified loading conditions rather than as a universal fatigue limit.",
+    "corpus_grounded_answer": "",
+    "relevant_paper_ids": ["CR_10_52783_dxjb_v38_285"],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q009",
+    "alloy_system": "Ti",
+    "query": "How does additive manufacturing (SLM/LPBF) affect the microstructure and mechanical properties of Ti-6Al-4V compared to wrought material?",
+    "ground_truth_answer": "Laser powder bed fusion (LPBF/SLM) produces a microstructure in Ti-6Al-4V that differs substantially from conventional wrought material. In the as-built condition, steep thermal gradients and repeated thermal cycling promote large, columnar prior-β grains that tend to grow along the build direction, within which a very fine acicular α′ martensitic structure commonly forms because of the rapid cooling rate. As-built LPBF Ti-6Al-4V therefore often has high tensile strength, typically around 1150–1300 MPa UTS and 1000–1150 MPa yield strength, but relatively limited ductility, commonly about 4–8%, with properties that can be anisotropic. Post-processing is commonly used to reduce residual stresses and tailor the microstructure. Sub-transus heat treatments such as approximately 800°C can decompose α′ into a lamellar α+β structure, generally reducing strength while improving ductility and toughness; the exact properties depend strongly on temperature, holding time, cooling rate, and initial LPBF condition. Compared with wrought Ti-6Al-4V, as-built LPBF material can have higher static strength but generally has greater sensitivity to fatigue because of surface roughness, internal defects, residual stresses, and microstructural anisotropy. HIP and appropriate surface finishing can substantially reduce the defect and surface contributions to fatigue, allowing optimized LPBF material to approach the fatigue performance of wrought material under some test conditions.",
+    "corpus_grounded_answer": "SLM/LPBF produces a non-equilibrium microstructure of columnar β grains aligned with the build direction and needle/plate-like metastable α′ martensite, resulting from rapid solidification. Process parameters affect porosity, hardness, strength, and anisotropy; insufficient energy density can cause lack-of-fusion pores. In the SLM study, Ti-6Al-4V showed YS 565–726 MPa, UTS 724–912 MPa, and elongation 0.8–2.2%. Compared with wrought material, the supplied literature reports a general AM trend of higher strength but lower ductility, with directional anisotropy. The WAAM paper additionally reports columnar grains, α-lath structures, microstructural heterogeneity, and higher reported strength but reduced ductility relative to wrought Ti-6Al-4V.",
+    "relevant_paper_ids": [
+      "CR_10_36910_w8br9g87",
+      "CR_10_4028_www_scientific_net_kem_651-653_677",
+      "AX_2006_08288",
+      "CR_10_3390_ma17184604",
+      "CR_10_4028_www_scientific_net_kem_716_871",
+      "CR_10_3390_ma17184604",
+      "CR_10_4028_www_scientific_net_kem_704_3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q010",
+    "alloy_system": "Ti",
+    "query": "I need a titanium alloy for a biomedical implant requiring high fatigue strength above 600 MPa, low elastic modulus close to bone (10–30 GPa), and no cytotoxic alloying elements. What do you recommend?",
+    "ground_truth_answer": "No conventional fully dense titanium alloy reliably satisfies all three requirements simultaneously: fatigue strength above 600 MPa, Young’s modulus of 10–30 GPa, and a non-cytotoxic alloying system. Ti-6Al-4V ELI is widely used clinically and has excellent fatigue strength and biocompatibility, but its Young’s modulus is about 110 GPa and therefore remains much higher than bone. Among low-modulus β-type alloys, Ti-29Nb-13Ta-4.6Zr (TNTZ) is a particularly strong candidate because it uses Nb, Ta, and Zr, has cytotoxicity reported to be comparable to pure Ti, and can achieve a fatigue limit of about 700 MPa after appropriate solution treatment and aging; however, its Young’s modulus is still approximately 60–65 GPa. Ti-13Nb-13Zr and Ti-24Nb-4Zr-8Sn (Ti2448) also provide reduced modulus compared with Ti-6Al-4V, but their dense-material moduli remain well above 30 GPa. If an effective implant stiffness in the 10–30 GPa range is mandatory, an architected porous or lattice structure made from a biocompatible β-type titanium alloy is a possible strategy, but the resulting effective modulus and fatigue strength must be designed and experimentally validated together because porosity and strut geometry can substantially reduce fatigue performance. Thus, the problem requires a trade-off between stiffness, fatigue strength, and biological compatibility rather than a single conventional dense alloy that automatically satisfies all three constraints.",
+    "corpus_grounded_answer": "no titanium alloy can be identified as satisfying all three requirements simultaneously: fatigue strength above 600 MPa, elastic modulus of 10–30 GPa, and no cytotoxic alloying elements. The papers report low elastic moduli for porous Ti-6Al-4V (16–18 GPa) and porous Ti-2Cu-4Ca (6.2–12.2 GPa), but their reported compressive strengths are only 113–125 MPa and 206–325 MPa, respectively, and fatigue strengths above 600 MPa are not reported. Ti-Mg and Ti-Nb-Cu have much higher reported compressive strengths, but their elastic moduli (36–50 and 43.9–58 GPa) exceed the specified range. Therefore, the supplied corpus does not provide an alloy that meets all three criteria.",
+    "relevant_paper_ids": [
+      "CR_10_52783_dxjb_v38_285",
+      "CR_10_1088_1757-899x_877_1_012016",
+      "CR_10_1088_2053-1591_abd969",
+      "CR_10_3390_ma13092070"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "Q011",
+    "alloy_system": "Steel",
+    "query": "What are the typical mechanical properties of dual-phase (DP) steel and what microstructure produces them?",
+    "ground_truth_answer": "Dual-phase (DP) steels typically consist of a soft ferritic matrix with dispersed hard martensite islands. Their properties depend strongly on martensite volume fraction, morphology and distribution, ferrite grain size, and ferrite–martensite hardness contrast. Increasing martensite fraction generally raises strength, although the strength–ductility balance also depends on martensite morphology and processing history. DP steels are commonly produced by intercritical annealing in the ferrite + austenite (α + γ) region, followed by sufficiently rapid cooling to transform the austenite predominantly into martensite. The required intercritical temperature is alloy-dependent and is therefore not universally 750–850 °C. Representative automotive grades demonstrate the strength–ductility range: DP600 has a minimum yield strength of about 340 MPa, tensile strength of about 590 MPa, and approximately 21% total elongation; DP800 about 420 MPa, 780 MPa, and 14%, respectively; and DP1000 about 550 MPa, 980 MPa, and 8%. Actual properties vary with chemistry, processing, microstructure, and test conditions. A characteristic feature of DP steels is continuous yielding, together with relatively high initial work-hardening capability and a useful strength–ductility combination for automotive forming. For example, experimental data for DP600 and DP800 reported tensile strengths of approximately 749 and 867 MPa, total elongations of 22.6% and 18.5%, and Swift hardening exponents of about 0.20 and 0.18, respectively.",
+    "corpus_grounded_answer": "dual-phase (DP) steels typically exhibit continuous yielding, a high initial work-hardening rate, a low yield-to-ultimate tensile strength ratio, relatively high tensile strength, and good ductility/formability. Their characteristic microstructure consists of a soft ferrite matrix containing harder martensite islands; in the experimental DP600 steel reported by Ashrafi et al., the martensite volume fraction was 28% and the mean ferrite grain size was 5 μm. The ferrite–martensite structure provides the combination of strength and ductility, while geometrically necessary dislocations generated near the ferrite–martensite interfaces contribute to continuous yielding and high initial work hardening. The mechanical properties depend strongly on martensite volume fraction and mechanical phase contrast: the Rezazadeh et al. simulations showed that lower martensite volume fraction and higher phase contrast increased global ductility, whereas higher martensite volume fraction and lower phase contrast improved local ductility. For the experimental DP600 base metal, the reported yield strength was 426 ± 5 MPa, ultimate tensile strength was 684 ± 7 MPa, and total elongation was 21.05 ± 1%.",
+    "relevant_paper_ids": [
+      "CR_10_1002_srin_201900311",
+      "CR_10_4028_www_scientific_net_kem_651-653_570",
+      "AX_2211_09720",
+      "CR_10_1002_srin_201700427",
+      "CR_10_1002_srin_202000118",
+      "CR_10_4028_www_scientific_net_msf_921_208"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q012",
+    "alloy_system": "Steel",
+    "query": "What is the composition and properties of 316L stainless steel, and why is it preferred for corrosive environments?",
+    "ground_truth_answer": "316L stainless steel is an austenitic Cr–Ni–Mo stainless steel with Fe–16–18Cr–10–14Ni–2–3Mo and C ≤0.03 wt.%; “L” denotes the low-carbon grade. For ASTM A240 flat-rolled products, minimum properties are 485 MPa tensile strength, 170 MPa 0.2% yield/proof strength, and 40% elongation; actual properties vary with product form, processing, and specification. The 2–3% Mo improves resistance to pitting and crevice corrosion, particularly in chloride environments, compared with 304. The low carbon content reduces sensitization and chromium-carbide precipitation, helping preserve resistance to intergranular corrosion after welding. 316L is therefore widely used in chemical processing, marine/aggressive environments, medical applications, and food/pharmaceutical equipment. Its Pitting Resistance Equivalent Number (PREN) is calculated as PREN = Cr + 3.3Mo + 16N; typical values are approximately 23.1–28.5 for 316/L, compared with 17.5–20.8 for 304, indicating greater pitting resistance. PREN is comparative and alone does not establish suitability for a specific service environment.",
+    "corpus_grounded_answer": "316L is an austenitic stainless steel composed, in the reported heats, of about 16.68–16.73% Cr, 9.97–10.10% Ni, 2.05–2.07% Mo, 1.75–1.81% Mn, 0.27–0.67% Si, 0.019–0.027% C, 0.032–0.041% P, 0.004–0.028% S, with Fe as the balance. It is used as a structural steel for MYRRHA reactor components. Its dissolution-corrosion behavior in oxygen-poor liquid LBE is strongly affected by grain size, annealing/deformation twins, precipitates, cold work, and texture. LBE attack starts preferentially at grain boundaries and may become transgranular, with selective leaching of Ni, Mn, and Cr and subsequent ferritisation. The supplied text does not state a general reason why 316L is preferred for corrosive environments; instead, it demonstrates that its corrosion resistance in LBE depends strongly on its microstructure and exposure conditions.",
+    "relevant_paper_ids": [
+      "CR_10_3390_met10040552",
+      "CR_10_5006_3087",
+      "AX_2112_08263",
+      "AX_2008_04485",
+      "AX_2108_10053"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q013",
+    "alloy_system": "Steel",
+    "query": "What processing route produces the best combination of strength and toughness in high-strength low-alloy (HSLA) steels?",
+    "ground_truth_answer": "Thermomechanical controlled processing (TMCP)—combining controlled rolling with accelerated cooling—is an established route for optimizing the strength–toughness balance of HSLA steels. Controlled rolling involves substantial deformation in the non-recrystallization region below the alloy-specific T_nr, producing pancaked/deformed austenite and increasing ferrite nucleation sites. Accelerated cooling then controls the austenite-to-ferrite/bainite transformation and promotes a fine microstructure, thereby improving strength and toughness. Microalloying with Nb, V, and Ti enhances the effect of TMCP: Nb strongly raises T_nrand retards austenite recrystallization, supporting austenite/ferrite grain refinement; V can provide precipitation strengthening in ferrite; and Ti forms stable TiN particles that help control austenite grain growth and fix nitrogen. Cooling rates and temperatures are steel- and process-dependent rather than universal. For example, one Nb–V HSLA study identified an initial accelerated-cooling rate of 10–30°C/s as suitable for producing a fine ferrite–bainite microstructure, achieving YS ≈620 MPa, UTS ≈735 MPa, and a 20-J impact transition temperature near −100°C.",
+    "corpus_grounded_answer": "Thermomechanical processing (TMP), particularly thermomechanical controlled processing (TMCP) involving controlled rolling followed by controlled or accelerated cooling, provides the most favorable strength–toughness combination described in the papers. Controlled rolling refines the austenite and final ferritic grain structure, while accelerated cooling controls phase transformations; Nb, Ti, and V precipitation further increases strength. In the Nb–Ti HSLA steel, an optimized Steckel-mill route with substantial reductions above and below the non-recrystallization temperature, followed by accelerated cooling and coiling at 600–650 °C, produced a highly refined and homogeneous microstructure and the highest measured strength, with 657 MPa yield strength and 740 MPa tensile strength, due mainly to fine TiC precipitation. For impact toughness, rolling just above the Ar3 temperature (~820 °C) followed by normalization was reported as producing the best impact properties among the variants discussed, while the designed HSLA steel maintained high CGHAZ toughness over 15–50 kJ/cm welding heat inputs.",
+    "relevant_paper_ids": [
+      "CR_10_1002_srin_201700019",
+      "CR_10_51301_ejsu_2025_i4_02",
+      "CR_10_7494_jcme_2024_8_4_54",
+      "CR_10_3390_met13020405"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q014",
+    "alloy_system": "Steel",
+    "query": "How does retained austenite content affect the mechanical behavior of TRIP steels?",
+    "ground_truth_answer": "TRIP (Transformation-Induced Plasticity) steels rely on retained austenite (RA) transforming progressively to deformation-induced martensite, which increases work hardening, delays necking, and improves the strength–ductility balance. A commonly reported RA range for a pronounced TRIP effect is approximately 10–20 vol.%, but the mechanical response depends strongly on both RA fraction and, especially, its stability. During straining, suitably stable RA transforms progressively rather than all at once, sustaining work hardening over a larger strain range. If RA is too unstable, transformation occurs at very low strains and the benefit of sustained transformation is reduced; insufficient RA can likewise limit the TRIP contribution. Carbon enrichment is important for stabilizing RA, with reported values varying substantially with alloy and processing; conventional TRIP steels can contain approximately 1.5–2.0 wt.% C in RA after bainitic transformation. Conventional processing typically involves intercritical annealing followed by rapid cooling and an isothermal bainitic hold, during which carbon partitions into the remaining austenite and stabilizes it to room temperature. Bainitic holding temperatures are process- and alloy-dependent; 400–450°C is representative of some conventional TRIP processing routes. As an example, TRIP steels can achieve approximately 800 MPa UTS with 25–30% total elongation, although the exact properties depend on composition and processing.",
+    "corpus_grounded_answer": "Retained austenite (RA) strongly affects the mechanical behavior of TRIP steels because its deformation-induced transformation into martensite produces the TRIP effect. A higher RA content can provide greater plasticity and, when it transforms during deformation, increase work hardening and mechanical strength. The mechanical stability of RA is also critical: at lower temperatures or higher applied stresses, RA transforms more readily, producing high work-hardening rates and strengthening, whereas excessive early transformation can deplete RA and reduce the TRIP effect at larger strains. Some untransformed RA therefore helps retain plastic properties while the transformed fraction contributes to strengthening. The effect also depends on RA distribution and stability; RA in ferrite grains is generally more stable than that at phase boundaries.",
+    "relevant_paper_ids": [
+      "CR_10_1002_srin_201700122",
+      "CR_10_4028_www_scientific_net_ssp_220-221_661",
+      "CR_10_4028_www_scientific_net_kem_741_36",
+      "CR_10_3139_120_110852",
+      "CR_10_4028_www_scientific_net_kem_716_311",
+      "CR_10_1515_amm-2015-0331"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q015",
+    "alloy_system": "Steel",
+    "query": "I need a steel for an offshore structural application requiring yield strength above 500 MPa, excellent weldability (CEV < 0.40), and Charpy impact energy above 100 J at -60°C. What grade and processing route do you recommend?",
+    "ground_truth_answer": "For an offshore structure requiring YS >500 MPa, CEV <0.40, and Charpy impact energy >100 J at −60°C, a conventional S500ML or EH47 specification should not be selected solely by grade name, because their standard impact requirements do not directly guarantee the stated −60°C/100-J criterion. EN 10025-4, for example, defines S500ML with impact requirements down to −50°C. A more appropriate solution is a purpose-designed TMCP offshore plate, such as an API 2W/DNV-type high-strength offshore steel, with the required −60°C Charpy performance explicitly specified and qualified. TMCP combines controlled rolling with accelerated cooling to produce a fine-grained microstructure while maintaining high strength and weldability. API 2W specifically provides supplementary impact testing at −60°C for lower-temperature service. The chemistry should use low carbon and controlled alloying/microalloying (e.g., Nb, Ti and/or V) to obtain the required strength and toughness while maintaining the specified CEV <0.40. Exact composition, rolling schedule, cooling rate, grain size, and resulting YS/UTS should be established for the selected grade and plate thickness rather than assumed universally. For such an application, qualification should include base-metal Charpy testing at −60°C and weld/HAZ toughness assessment, together with welding-procedure qualification and control of heat input. TMCP steels are specifically designed to obtain high strength and weldability through controlled thermomechanical processing rather than relying on high carbon or excessive alloying.",
+    "corpus_grounded_answer": "",
+    "relevant_paper_ids": [],
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "Q016",
+    "alloy_system": "Mg",
+    "query": "What are the main limitations of magnesium alloys that restrict their wider structural application?",
+    "ground_truth_answer": "The wider structural use of magnesium alloys is mainly limited by poor corrosion resistance, limited room-temperature ductility/formability, and relatively low absolute strength compared with steels and many Al/Ti structural alloys. 1- Corrosion: Mg has a very negative electrochemical potential (about −2.37 V vs SHE) and is highly susceptible to corrosion, particularly in aggressive/chloride environments and in galvanic contact with dissimilar metals. 2- Ductility/formability: Mg has an HCP crystal structure. At room temperature, basal slip is the dominant and most readily activated slip mode, while non-basal slip requires higher stresses; twinning therefore plays an important role in accommodating deformation. This limited slip-system activity contributes to poor ductility, formability, anisotropy, and tension–compression asymmetry. 3- Strength: Conventional Mg alloys have relatively low absolute strength. For example, AZ31E can have approximately 260 MPa tensile strength and 125 MPa 0.2% proof stress in the T4 condition, although properties vary with alloy, temper, processing, and product form. These limitations are addressed through approaches including rare-earth alloying and microstructure/texture control to improve ductility and mechanical performance, Ca/Zn/Mn alloying, and surface treatments such as plasma electrolytic oxidation to improve corrosion resistance.",
+    "corpus_grounded_answer": "The two primary limitations restricting the wider structural application of magnesium alloys are low formability and poor corrosion performance. Low formability is associated with their deformation behavior and texture, including the dominance of basal slip and the roles of non-basal slip, twinning, and recrystallization in controlling sheet formability. Poor corrosion resistance is related to microstructural features such as the size and distribution of the β-Mg₁₇Al₁₂ phase, which can promote microgalvanic corrosion. Surface remelting of AZ91 was shown to improve corrosion resistance through strong grain refinement and a more uniform distribution of the β phase.",
+    "relevant_paper_ids": [
+      "CR_10_4028_www_scientific_net_msf_879_938",
+      "CR_10_1007_s11661-017-4404-3",
+      "CR_10_4028_www_scientific_net_msf_941_1189",
+      "CR_10_3390_ma15248980",
+      "CR_10_1088_1742-6596_1270_1_012043"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q017",
+    "alloy_system": "Mg",
+    "query": "What are the mechanical properties of AZ31 and AZ91 magnesium alloys and what are their typical applications?",
+    "ground_truth_answer": "AZ31 (Mg–3Al–1Zn) is primarily a wrought magnesium alloy, commonly used in sheet and extrusion products. Its mechanical properties depend strongly on temper and product thickness; for AZ31B-H24 sheet, ASTM B90/B90M specifies minimum tensile strengths of approximately 234–269 MPa, yield strengths of 124–200 MPa, and minimum elongations of about 6–8%, depending on thickness. AZ31 offers relatively good ductility and formability and is used in rolled sheet, extrusions, aircraft components, electronic/cell-phone housings, and other lightweight products. AZ91/AZ91D (Mg–9Al–1Zn) is primarily a cast/die-casting alloy. Representative AZ91D properties are about 240–250 MPa UTS, 160 MPa yield strength, and 3–7% elongation, depending on casting and heat-treatment condition. Its higher Al content promotes formation of the Mg₁₇Al₁₂ (β) phase, contributing to strength but generally reducing ductility, particularly when the β phase forms an unfavorable intergranular network. AZ91D is widely used for die-cast housings, covers, computer and mobile-device components, household equipment, and automotive components, where its excellent castability enables complex near-net-shape parts. Thus, the key distinction is that AZ31 is mainly selected for wrought/forming applications, whereas AZ91D is mainly selected for die casting of complex lightweight shapes where castability and strength are more important than high ductility.",
+    "corpus_grounded_answer": "AZ31 has characteristic mechanical properties of approximately 190 MPa yield strength, 272 MPa tensile strength, 20% elongation, and 49 HB hardness. In the supplied TIG-welding study, the measured AZ31 base metal showed 239.7 MPa tensile strength and 8.7% elongation. Its base-metal hardness in the AZ31/AZ91 FSW study was 50–70 HV. AZ91, in the cast condition, showed 140.5 MPa tensile strength, 5.9% elongation, and 65.7 HV hardness. After one-pass FSP, these increased to 284.5 MPa, 13%, and 78.2 HV, respectively, and after two-pass FSP to 319.7 MPa, 14.5%, and 81.2 HV, mainly because of grain refinement and microstructural homogenization. The supplied papers describe magnesium alloys as candidates for automotive, aerospace/aircraft, biomedical, and ship-manufacturing applications because of their low density and high specific strength/stiffness. However, the three papers do not specify distinct typical applications separately for AZ31 and AZ91.",
+    "relevant_paper_ids": [
+      "AX_1910_13265",
+      "CR_10_3989_revmetalm_e259_2310",
+      "CR_10_15282_ijame_16_2_2019_15_0502",
+      "CR_10_4028_www_scientific_net_msf_941_1198",
+      "CR_10_4028_www_scientific_net_msf_850_778"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "Q018",
+    "alloy_system": "Mg",
+    "query": "How do rare earth element additions improve the mechanical properties and corrosion resistance of magnesium alloys?",
+    "ground_truth_answer": "Rare-earth (RE) additions such as Y, Gd, Nd, and Ce can improve Mg alloys through several mechanisms. They can weaken the strong basal texture developed during processing, promote more favorable recrystallization/orientations and non-basal deformation, and thereby improve ductility and formability. RE additions can also refine grains, providing Hall–Petch strengthening, while elements such as Gd and Y can provide solid-solution and precipitation strengthening through stable RE-containing precipitates, improving strength and thermal stability. For corrosion resistance, RE additions can reduce micro-galvanic corrosion, modify the composition/distribution of secondary phases, reduce the detrimental effects of impurity elements, and promote denser, more protective oxide/hydroxide corrosion films. However, the effect is strongly dependent on the RE type, concentration, alloy chemistry, and microstructure; excessive additions can form unfavorable secondary phases and may increase corrosion rather than reduce it. Thus, RE alloying can simultaneously improve strength, ductility/formability, elevated-temperature stability, and corrosion resistance, but the optimum RE element and concentration must be selected for the specific alloy and processing route. The main disadvantages include the higher cost of RE additions and the possibility of undesirable secondary phases at excessive concentrations.",
+    "corpus_grounded_answer": "Rare-earth additions improve the mechanical properties of magnesium alloys through grain refinement, solid-solution strengthening, precipitation strengthening, and dispersion strengthening. In Mg-12Gd-3Y-0.5Zr, Y and Gd promote grain refinement and stable β/β′ phases that restrict grain growth, grain-boundary sliding, and dislocation movement, improving high-temperature strength and thermal stability; stable precipitates also restrict fatigue-crack propagation. RE additions can additionally modify texture and improve strength and ductility in some Mg systems. However, their effect on corrosion resistance is not universally positive: the reviewed paper reports a negative effect of Y on Mg corrosion in one study, although Mg-Zn-RE alloys are also reported as systems investigated for improved corrosion resistance.",
+    "relevant_paper_ids": [
+      "CR_10_1038_s41598-017-10384-0",
+      "CR_10_4028_www_scientific_net_msf_979_162",
+      "CR_10_4028_www_scientific_net_aef_35_1",
+      "CR_10_1088_1755-1315_768_1_012023"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q019",
+    "alloy_system": "Mg",
+    "query": "What Mg alloy and surface treatment combination is recommended for automotive body panel applications where weight reduction is critical?",
+    "ground_truth_answer": "For lightweight automotive body-panel applications, AZ31B magnesium sheet is a well-established candidate, particularly for inner panels and other components where weight reduction is important. Because Mg has limited room-temperature formability, warm forming with heated blanks and/or dies, typically around 200–350°C and commonly around 250–300°C for AZ31B automotive panels, is used to improve formability. Because magnesium has poor corrosion resistance, the formed AZ31B should receive a protective surface-treatment system. Plasma electrolytic oxidation (PEO/MAO) can produce a ceramic-like oxide coating that substantially improves corrosion resistance, but its intrinsic porosity means that sealing and/or a primer/topcoat can provide additional protection. PEO-coated AZ31 has demonstrated improved performance in salt-spray and electrochemical corrosion tests, although the exact durability depends strongly on coating composition, porosity, defects, and the complete coating system. The recommended concept is therefore AZ31B sheet + warm forming + PEO followed by an appropriate primer/topcoat or sealing system, with the final coating system qualified against the automotive corrosion requirements applicable to the component. Galvanic corrosion must also be addressed when Mg is joined to steel or other dissimilar metals through suitable isolation, joining design, and sealing. AZ31B warm-formed automotive panels have been demonstrated, including dash-panel and door-inner-panel applications, but the main barriers to widespread body-panel adoption remain forming-process complexity/cost, corrosion protection, and reliable joining with conventional steel/aluminum body structures.",
+    "corpus_grounded_answer": "",
+    "relevant_paper_ids": [],
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "Q020",
+    "alloy_system": "Mg",
+    "query": "I need a biodegradable Mg alloy for a bone fixation screw that must maintain mechanical integrity for 12 weeks, degrade fully within 12 months, and not release cytotoxic ions. What composition and surface treatment do you recommend?",
+    "ground_truth_answer": "Biodegradable Mg bone fixation is an active clinical research area. The 12-week integrity / 12-month full degradation window is achievable with careful alloy and coating selection. Alloy recommendation: Mg-2Zn-0.5Mn or Mg-1Ca-0.5Zn — both use biocompatible elements only (Zn, Mn, Ca are essential nutrients). Avoid Al (neurotoxicity concerns), RE elements (long-term biocompatibility unclear). Mechanical properties: UTS ~220–260 MPa, YS ~160–200 MPa, sufficient for non-load-bearing and partially load-bearing bone screws. Degradation control: bare Mg degrades too rapidly (pH spike, H2 gas evolution). Micro-arc oxidation (MAO) coating + calcium phosphate (CaP) sealing creates a biphasic barrier — MAO layer slows early degradation for weeks 1–8, CaP layer promotes osseointegration. In vivo degradation rate target: 0.2–0.5 mm/year in physiological solution. Zn addition (1–2 wt%) refines grain size and improves corrosion uniformity, preventing localized pitting that causes premature mechanical failure. Mn (0.3–0.5 wt%) scavenges Fe impurities below the critical threshold of 50 ppm, which is essential — Fe contamination above this level dramatically accelerates galvanic corrosion and causes implant failure within weeks.",
+    "corpus_grounded_answer": "For this application, the three papers provide two relevant candidates: gradient Mg–8 wt% Si with a Mg₂Si-rich surface layer and ZK60 (Mg–5.5 wt% Zn–0.6 wt% Zr) with hydroxyl-ion implantation. The gradient Mg–8Si structure contains a dense, network-like Mg₂Si-rich surface layer (GMS8-1) that acts as a physical corrosion barrier; it showed a corrosion rate of 0.10 mm/year and a polarization resistance of 1610 Ω in PBS at 37°C, while showing no cytotoxicity toward MC3T3-E1 cells. For ZK60, implantation of 1 × 10¹⁶ OH⁻/cm² produced an approximately 750 nm Mg(OH)₂/MgO-rich functional layer; this reduced Icorr from 291.94 to 88.01 μA/cm², and cell viability exceeded 80% in 50% and 70% extracts, although the 100% extract remained cytotoxic. However, none of the three papers demonstrates that either material maintains mechanical integrity for 12 weeks, completely degrades within 12 months, and simultaneously releases no cytotoxic ions. The Mg–8Si paper also does not use a separate surface treatment; the Mg₂Si-rich gradient layer itself provides the corrosion barrier. Therefore, the composition and treatment that definitively satisfy all three specified requirements cannot be determined from these three papers alone.",
+    "relevant_paper_ids": [
+      "CR_10_3390_met11050781",
+      "CR_10_3390_met10060791",
+      "AX_2105_02558",
+      "CR_10_3390_ma10070696"
+    ],
+    "difficulty": "hard"
+  }
+]

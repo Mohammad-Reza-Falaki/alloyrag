@@ -1,0 +1,90 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# AlloyRAG — Complete Requirements
+# Generated from working venv on 2026-06-07
+# Installation order matters — follow top to bottom
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Layer 1: Core utilities (no heavy dependencies) ───────────────────────────
+python-dotenv==1.2.2
+requests==2.34.2
+urllib3==2.7.0
+certifi==2026.5.20
+charset-normalizer==3.4.7
+idna==3.17
+packaging==24.2
+typing_extensions==4.15.0
+pathlib2==2.3.7.post1
+six==1.17.0
+python-dateutil==2.9.0.post0
+pytz==2026.2
+tzdata==2026.2
+tqdm==4.67.3
+click==8.4.1
+colorama==0.4.6
+rich==14.3.4
+
+# ── Layer 2: Numerical computing ──────────────────────────────────────────────
+numpy==1.26.4
+pandas==3.0.3
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.9
+pillow==12.2.0
+sympy==1.13.1
+mpmath==1.3.0
+
+# ── Layer 3: PyTorch — install GPU version manually if needed ─────────────────
+# If not already installed run:
+# pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121
+# --index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# ── Layer 4: HuggingFace stack — strict order required ────────────────────────
+tokenizers==0.21.0
+huggingface-hub==0.33.5
+safetensors==0.7.0
+transformers==4.51.0
+accelerate==1.13.0
+sentence-transformers==3.4.1
+
+# ── Layer 5: LangChain stack — strict order required ─────────────────────────
+langchain-core==0.3.86
+langchain==0.3.21
+langchain-community==0.3.20
+langchain-openai==0.3.12
+langchain-text-splitters==0.3.11
+
+# ── Layer 6: RAGAS — must come after full langchain stack ─────────────────────
+ragas==0.2.15
+
+# ── Layer 7: Vector store and retrieval ───────────────────────────────────────
+chromadb==1.5.9
+rank-bm25==0.2.2
+onnxruntime==1.26.0
+
+# ── Layer 8: PDF processing ───────────────────────────────────────────────────
+pdfminer.six==20251230
+pdfplumber==0.11.9
+
+# ── Layer 9: API clients ──────────────────────────────────────────────────────
+openai==1.109.1
+anthropic==0.106.0
+httpx==0.28.1
+httpcore==1.0.9
+
+# ── Layer 10: Data and evaluation ─────────────────────────────────────────────
+datasets==4.8.5
+scikit-network==0.33.5
+pydantic==2.13.4
+pydantic-settings==2.14.1
+
+# ── Layer 11: UI ──────────────────────────────────────────────────────────────
+gradio==6.15.2
+
+# ── Layer 12: Async and networking utilities ──────────────────────────────────
+anyio==4.13.0
+aiohttp==3.13.5
+fastapi==0.136.3
+uvicorn==0.48.0
